@@ -6,11 +6,11 @@ def achievement(page):
     #需要根据一共页数来爬取
     for i in range(page):
         data = {
-            "xnxqdm": "",
-            "page": f"{i}",
-            "rows": "20",
-            "sort": "xnxqdm,kcbh,ksxzdm",
-            "order": "asc"
+            "xnxqdm":"",
+            "page":f"{i}",
+            "rows":"20",
+            "sort":"xnxqdm,kcbh,ksxzdm",
+            "order":"asc"
         }
         # 成绩的地址
         url = "https://jwxt.gdupt.edu.cn/xskccjxx!getDataList.action"

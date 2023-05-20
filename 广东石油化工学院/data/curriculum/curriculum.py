@@ -1,11 +1,11 @@
 import requests
-from school.广东石油化工学院.data.login.config import headers2,params1
+from school.广东石油化工学院.data.login.config import headers2
 #登录的网址
 #具体数据的网址
 #zc = 填现在的周次 xnxqdm:年级数+第几学期 第一学期:01
 def curriculum(xnxqdm,zc):
     pn = 1
-    params = {"xnxqdm": xnxqdm, "zc": zc}
+    params = {"xnxqdm":xnxqdm,"zc": zc}
     curriculum = []
     while 1:
         url = f"https://jwxt.gdupt.edu.cn/xsgrkbcx!getKbRq.action?xnxqdm=202202&zc={pn}"
