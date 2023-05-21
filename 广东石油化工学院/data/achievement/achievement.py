@@ -1,7 +1,7 @@
 import  requests
 from school.广东石油化工学院.data.login.login import login
-def achievement(page,username,password):
-    cookie = login(username,password)
+def achievement(page,username,password,flag):
+    cookie = login(username,password,flag)
     achievement = [
     ]
     headers = {

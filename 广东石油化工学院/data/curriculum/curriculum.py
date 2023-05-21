@@ -3,8 +3,8 @@ from school.广东石油化工学院.data.login.login import login
 #登录的网址
 #具体数据的网址
 #zc = 填现在的周次 xnxqdm:年级数+第几学期 第一学期:01
-def curriculum(xnxqdm,zc,username,password):
-    cookie = login(username,password)
+def curriculum(xnxqdm,zc,username,password,flag):
+    cookie = login(username,password,flag)
     headers = {
         "Accept": "application/json,text/javascript,*/*; q=0.01",
         "Accept-Encoding": "gzip,deflate,br",
