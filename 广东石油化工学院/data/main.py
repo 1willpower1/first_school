@@ -6,6 +6,5 @@ def login_NCUWREP(username,password):
 # xnxqdm:年级数+第几学期 列入 202202 表示2022级第2学期
 # zc:填入周次如何数字都
 # page:填入一共有多少页成绩数据
-def getData_NCUWREP(xnxqdm,zc,page):
-    data(xnxqdm,zc,page)
-getData_NCUWREP(202202,12,1)
+def getData_NCUWREP(xnxqdm,zc,page,username,password):
+    data(xnxqdm,zc,page,username,password)

@@ -16,9 +16,10 @@ def login(username,password):
     try:
         resp1 = requests.session().post(data=data,headers=headers,url=url)
         if resp1.text == '{"msg":"/login!welcome.action","status":"y"}':
-            print("登录成功")
+            print("登录成功!")
+            return resp1.headers["Set-Cookie"].split(";")
         else:
-            print("登录失败")
+            print("登录失败!")
     except Exception as e:
         print(e)
 
