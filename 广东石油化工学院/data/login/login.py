@@ -1,4 +1,5 @@
 import requests
+from fake_useragent import UserAgent
 from school.广东石油化工学院.data.login.config import  headers
 def login(username,password,flag=True):
     import  base64
@@ -18,10 +19,10 @@ def login(username,password,flag=True):
         if resp1.text == '{"msg":"/login!welcome.action","status":"y"}':
             if flag:
                 print("登录成功!")
+                print(resp1.headers["Set-Cookie"].split(";"))
             else:
                 return resp1.headers["Set-Cookie"].split(";")
         else:
             print("登录失败!")
     except Exception as e:
         print(e)
-

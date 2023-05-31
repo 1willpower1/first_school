@@ -8,4 +8,3 @@ def login_NCUWREP(username,password):
 # page:填入一共有多少页成绩数据
 def getData_NCUWREP(xnxqdm,zc,page,username,password):
     data(xnxqdm,zc,page,username,password,flag=False)
-getData_NCUWREP(202202,12,1,22014260526,"13928337855a")
